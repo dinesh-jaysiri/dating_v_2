@@ -130,7 +130,7 @@ a {
 
 @media screen and (max-width: 640px) {
   .hero--section {
-    height: 170.625vw;
+    height: 165.625vw;
     background-image: url(/images/mobile_hero.png);
     background-position: center;
     background-repeat: no-repeat;
