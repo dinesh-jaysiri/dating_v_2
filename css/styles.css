@@ -42,19 +42,18 @@ a {
   color: inherit;
 }
 
-.link_mobile{
+.link_mobile {
   display: none;
 }
 
 @media screen and (max-width: 640px) {
-  .link_desktop{
+  .link_desktop {
     display: none;
   }
-  .link_mobile{
+  .link_mobile {
     display: inline;
   }
 }
-
 
 /* 320px — 480px: Mobile devices.
 481px — 768px: iPads, Tablets.
@@ -63,18 +62,17 @@ a {
 
 .container {
   max-width: 1240px;
-  margin: auto ;
+  margin: auto;
   padding-inline: 20px;
   height: 100%;
   position: relative;
 }
 
 @media screen and (max-width: 640px) {
-  .container{
-    padding-inline:3.125vw;
+  .container {
+    padding-inline: 3.125vw;
   }
 }
-
 
 /* icon */
 
@@ -124,12 +122,11 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 60px;
-  min-height: 1vh;
 }
 
 @media screen and (max-width: 640px) {
   .hero--section {
-    height: 140.625vw;
+    height: 150.625vw;
     background-image: url(/images/mobile_hero.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -157,8 +154,8 @@ a {
 }
 
 .btn:hover {
-  background: rgb(255, 109, 133 ,0.2);
-  cursor:pointer;
+  background: rgb(255, 109, 133, 0.2);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 640px) {
@@ -208,14 +205,13 @@ a {
   }
   .head--line > br {
     display: none;
-    
   }
   .tag--line {
     width: 93.75vw;
-    font-size :3.125vw;
-    letter-spacing :0.156vw; 
+    font-size: 3.125vw;
+    letter-spacing: 0.156vw;
     text-align: center;
-    padding-bottom: 6.25vw; 
+    padding-bottom: 6.25vw;
   }
 }
 
@@ -248,11 +244,12 @@ a {
 /* hero text*/
 
 @media screen and (max-width: 640px) {
-.hero--text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}}
+  .hero--text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 /* icon box */
 
@@ -265,7 +262,6 @@ a {
 @media screen and (max-width: 640px) {
   .icon--box {
     right: 13vw;
-    bottom:3.125vw ;
-  
-}
+    bottom: 3.125vw;
+  }
 }
