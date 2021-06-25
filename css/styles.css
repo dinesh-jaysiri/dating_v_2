@@ -124,6 +124,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 60px;
+  min-height: 1vh;
 }
 
 @media screen and (max-width: 640px) {
