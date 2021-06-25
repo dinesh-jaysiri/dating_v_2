@@ -42,6 +42,20 @@ a {
   color: inherit;
 }
 
+.link_mobile{
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  .link_desktop{
+    display: none;
+  }
+  .link_mobile{
+    display: inline;
+  }
+}
+
+
 /* 320px — 480px: Mobile devices.
 481px — 768px: iPads, Tablets.
 769px — 1024px: Small screens, laptops.
@@ -51,6 +65,8 @@ a {
   max-width: 1240px;
   margin: auto ;
   padding-inline: 20px;
+  height: 100%;
+  position: relative;
 }
 
 @media screen and (max-width: 640px) {
@@ -58,8 +74,7 @@ a {
     padding-inline:3.125vw;
   }
 }
-.hero_section {
-}
+
 
 /* icon */
 
@@ -131,12 +146,18 @@ a {
 
   border-radius: 3px;
   border: 1px solid var(--color-btn-border);
+  transition: all 0.2s ease-in;
 }
 
 .btn--small {
   padding: 0 32px;
   line-height: 22px;
   height: 40px;
+}
+
+.btn:hover {
+  background: rgb(255, 109, 133 ,0.2);
+  cursor:pointer;
 }
 
 @media screen and (max-width: 640px) {
@@ -157,7 +178,7 @@ a {
   line-height: 65px;
   color: white;
   text-shadow: 5px 2px 5px black;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 /* hero tag line */
@@ -215,7 +236,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 170px;
+  margin-bottom: 150px;
 }
 @media screen and (max-width: 640px) {
   .menu--bar {
@@ -231,3 +252,19 @@ a {
   flex-direction: column;
   align-items: center;
 }}
+
+/* icon box */
+
+.icon--box {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+}
+
+@media screen and (max-width: 640px) {
+  .icon--box {
+    right: 13vw;
+    bottom:3.125vw ;
+  
+}
+}
