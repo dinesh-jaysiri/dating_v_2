@@ -1,0 +1,233 @@
+@font-face {
+  font-family: "arial";
+  src: url("/css/fonts/arial-webfont.woff2") format("woff2"),
+    url("/css/fonts/arial-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "arial";
+  src: url("/css/fonts/arialbd-webfont.woff2") format("woff2"),
+    url("/css//fonts/arialbd-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+:root {
+  --color-light: #e3e1e1;
+  --color-dark: #e5e4e4;
+  --color-icon-body: #fff5f5;
+  --color-btn-border: #ececec;
+  --border-redius: 3px;
+}
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* typography */
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "arial", Arial, Helvetica, sans-serif;
+  background: gray;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 320px — 480px: Mobile devices.
+481px — 768px: iPads, Tablets.
+769px — 1024px: Small screens, laptops.
+1025px — 1200px: Desktops, large screens. */
+
+.container {
+  max-width: 1240px;
+  margin: auto ;
+  padding-inline: 20px;
+}
+
+@media screen and (max-width: 640px) {
+  .container{
+    padding-inline:3.125vw;
+  }
+}
+.hero_section {
+}
+
+/* icon */
+
+.icon {
+  width: 45px;
+  height: 45px;
+  fill: var(--color-light);
+  margin-inline: 10px;
+}
+
+.icon--container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid var(--color-dark);
+  height: 50px;
+}
+
+.icon__text {
+  color: var(--color-icon-body);
+  font-size: 12px;
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 640px) {
+  .icon {
+    width: 5.46vw;
+    height: 5.46vw;
+    margin-inline: 1.56vw;
+  }
+  .icon--container {
+    height: 4.25vw;
+  }
+
+  .icon__text {
+    font-size: 1.56vw;
+    padding-right: 1.56vw;
+  }
+}
+
+/* hero section */
+
+.hero--section {
+  height: 780px;
+  background-image: url(/images/desktop_hero.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 60px;
+}
+
+@media screen and (max-width: 640px) {
+  .hero--section {
+    height: 140.625vw;
+    background-image: url(/images/mobile_hero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 6.25vw;
+  }
+}
+
+.btn {
+  font-size: 22px;
+  line-height: 25px;
+  padding: 12.5px 40px;
+  background: none;
+  color: white;
+
+  border-radius: 3px;
+  border: 1px solid var(--color-btn-border);
+}
+
+.btn--small {
+  padding: 0 32px;
+  line-height: 22px;
+  height: 40px;
+}
+
+@media screen and (max-width: 640px) {
+  .btn {
+    font-size: 3.4375vw;
+    line-height: 3.9vw;
+    padding: 1.953vw 6.25vw;
+  }
+  .btn--small {
+    padding: 1.093vw 5vw;
+    height: 6.25vw;
+  }
+}
+
+.head--line {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 65px;
+  color: white;
+  text-shadow: 5px 2px 5px black;
+  margin-bottom: 70px;
+}
+
+/* hero tag line */
+
+.tag--line {
+  width: 750px;
+  font-size: 22px;
+  color: white;
+  line-height: auto;
+  letter-spacing: 1px;
+  text-shadow: 3px 2px 3px black;
+  padding-bottom: 30px;
+}
+@media screen and (max-width: 810px) {
+  .tag--line {
+    width: 92.59vw;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .head--line {
+    font-size: 5.46875vw;
+    line-height: 6.25vw;
+    text-align: center;
+    margin-bottom: 9.375vw;
+  }
+  .head--line > br {
+    display: none;
+    
+  }
+  .tag--line {
+    width: 93.75vw;
+    font-size :3.125vw;
+    letter-spacing :0.156vw; 
+    text-align: center;
+    padding-bottom: 6.25vw; 
+  }
+}
+
+/* brnd logo */
+
+.brand_logo {
+  width: 200px;
+  height: 60px;
+}
+@media screen and (max-width: 640px) {
+  .brand_logo {
+    width: 25.46vw;
+    height: 7.8125vw;
+  }
+}
+
+/* menubar */
+.menu--bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 170px;
+}
+@media screen and (max-width: 640px) {
+  .menu--bar {
+    margin-bottom: 42.18vw;
+  }
+}
+
+/* hero text*/
+
+@media screen and (max-width: 640px) {
+.hero--text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}}
