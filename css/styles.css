@@ -63,14 +63,14 @@ a {
 .container {
   max-width: 1240px;
   margin: auto;
-  padding-inline: 20px;
+  padding: 0 20px;
   height: 100%;
   position: relative;
 }
 
 @media screen and (max-width: 640px) {
   .container {
-    padding-inline: 3.125vw;
+    padding: 0 3.125vw;
   }
 }
 
@@ -80,7 +80,7 @@ a {
   width: 45px;
   height: 45px;
   fill: var(--color-light);
-  margin-inline: 10px;
+  margin:0 10px;
 }
 
 .icon--container {
@@ -101,7 +101,7 @@ a {
   .icon {
     width: 5.46vw;
     height: 5.46vw;
-    margin-inline: 1.56vw;
+    margin: 0 1.56vw;
   }
   .icon--container {
     height: 4.25vw;
